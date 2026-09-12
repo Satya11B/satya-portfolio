@@ -3,37 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of fictional product engineer Satya Bhatt.">
-  <title>Satya Bhatt — Product Engineer</title>
+  <meta name="description" content="Portfolio of game maker Satya Bhatt and his playable projects.">
+  <title>Satya Bhatt — Game Maker</title>
   <style>
     :root {
       color-scheme: light dark;
-      --bg: #f5f7fb;
-      --surface: rgba(255, 255, 255, 0.82);
-      --surface-solid: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --line: #e5eaf2;
-      --accent: #6d4aff;
-      --accent-soft: #eeeaff;
-      --accent-contrast: #ffffff;
-      --shadow: 0 18px 45px rgba(41, 48, 76, 0.08);
-      --shadow-hover: 0 24px 55px rgba(41, 48, 76, 0.16);
+      --bg: #080d1c;
+      --surface: rgba(18, 28, 53, 0.86);
+      --surface-solid: #121c35;
+      --text: #f4f7ff;
+      --muted: #8f9bb8;
+      --line: #263252;
+      --accent: #69f7c1;
+      --accent-soft: #142f39;
+      --accent-contrast: #08131f;
+      --secondary: #8c7bff;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.48);
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #10131c;
-        --surface: rgba(26, 31, 45, 0.84);
-        --surface-solid: #1a1f2d;
-        --text: #f4f6fb;
-        --muted: #a1aabc;
-        --line: #2b3346;
-        --accent: #a18bff;
-        --accent-soft: #2b2456;
-        --accent-contrast: #171229;
-        --shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
-        --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.34);
+        --bg: #080d1c;
+        --surface: rgba(18, 28, 53, 0.86);
+        --surface-solid: #121c35;
+        --text: #f4f7ff;
+        --muted: #8f9bb8;
+        --line: #263252;
+        --accent: #69f7c1;
+        --accent-soft: #142f39;
+        --accent-contrast: #08131f;
+        --secondary: #8c7bff;
+        --shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+        --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.48);
       }
     }
 
@@ -43,31 +45,33 @@
 
     :root[data-theme="dark"] {
       color-scheme: dark;
-      --bg: #10131c;
-      --surface: rgba(26, 31, 45, 0.84);
-      --surface-solid: #1a1f2d;
-      --text: #f4f6fb;
-      --muted: #a1aabc;
-      --line: #2b3346;
-      --accent: #a18bff;
-      --accent-soft: #2b2456;
-      --accent-contrast: #171229;
-      --shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
-      --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.34);
+      --bg: #080d1c;
+      --surface: rgba(18, 28, 53, 0.86);
+      --surface-solid: #121c35;
+      --text: #f4f7ff;
+      --muted: #8f9bb8;
+      --line: #263252;
+      --accent: #69f7c1;
+      --accent-soft: #142f39;
+      --accent-contrast: #08131f;
+      --secondary: #8c7bff;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 24px 55px rgba(0, 0, 0, 0.48);
     }
 
     :root[data-theme="light"] {
-      --bg: #f5f7fb;
-      --surface: rgba(255, 255, 255, 0.82);
+      --bg: #f0f4ff;
+      --surface: rgba(255, 255, 255, 0.86);
       --surface-solid: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --line: #e5eaf2;
-      --accent: #6d4aff;
-      --accent-soft: #eeeaff;
+      --text: #111a35;
+      --muted: #61708f;
+      --line: #d8e0f2;
+      --accent: #167c68;
+      --accent-soft: #d9f7ed;
       --accent-contrast: #ffffff;
-      --shadow: 0 18px 45px rgba(41, 48, 76, 0.08);
-      --shadow-hover: 0 24px 55px rgba(41, 48, 76, 0.16);
+      --secondary: #6655d8;
+      --shadow: 0 18px 45px rgba(40, 55, 100, 0.12);
+      --shadow-hover: 0 24px 55px rgba(40, 55, 100, 0.2);
     }
 
     * {
@@ -84,9 +88,12 @@
       margin: 0;
       color: var(--text);
       background:
-        radial-gradient(circle at 88% 4%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 27rem),
+        linear-gradient(rgba(105, 247, 193, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(105, 247, 193, 0.025) 1px, transparent 1px),
+        radial-gradient(circle at 88% 4%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 27rem),
         var(--bg);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-size: 34px 34px, 34px 34px, auto, auto;
+      font-family: "Courier New", ui-monospace, monospace;
       font-size: 15px;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -123,9 +130,9 @@
       place-items: center;
       color: var(--accent-contrast);
       background: var(--accent);
-      border-radius: 10px;
+      border-radius: 4px;
       font-size: 14px;
-      box-shadow: 0 7px 16px color-mix(in srgb, var(--accent) 30%, transparent);
+      box-shadow: 4px 4px 0 var(--secondary);
     }
 
     .nav-actions {
@@ -141,7 +148,7 @@
       justify-content: center;
       min-height: 36px;
       border: 1px solid transparent;
-      border-radius: 10px;
+      border-radius: 4px;
       font: inherit;
       font-size: 13px;
       text-decoration: none;
@@ -186,6 +193,7 @@
       align-items: end;
       gap: 40px;
       padding: clamp(78px, 13vw, 146px) 0 86px;
+      position: relative;
     }
 
     .eyebrow {
@@ -198,6 +206,7 @@
       font-weight: 760;
       letter-spacing: 0.13em;
       text-transform: uppercase;
+      text-shadow: 0 0 16px color-mix(in srgb, var(--accent) 35%, transparent);
     }
 
     .eyebrow::before {
@@ -211,7 +220,7 @@
       max-width: 750px;
       margin: 0;
       font-size: clamp(2.9rem, 7vw, 5.8rem);
-      font-weight: 760;
+      font-weight: 800;
       letter-spacing: -0.075em;
       line-height: 0.98;
     }
@@ -236,14 +245,14 @@
       place-items: center;
       background: var(--accent-soft);
       border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
-      border-radius: 38% 62% 55% 45% / 45% 42% 58% 55%;
-      box-shadow: var(--shadow);
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 var(--secondary);
       font-size: clamp(3.8rem, 8vw, 6rem);
-      transform: rotate(5deg);
+      transform: rotate(3deg);
     }
 
     .avatar span {
-      transform: rotate(-5deg);
+      transform: rotate(-3deg);
     }
 
     .section-heading {
@@ -256,14 +265,17 @@
 
     h2 {
       margin: 0;
-      font-size: 17px;
-      letter-spacing: -0.025em;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .section-note {
       margin: 0;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .projects-grid {
@@ -281,10 +293,12 @@
       color: inherit;
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 18px;
+      border-radius: 6px;
       box-shadow: var(--shadow);
       text-decoration: none;
       backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
       transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
     }
 
@@ -294,6 +308,17 @@
       transform: translateY(-6px);
     }
 
+    .project-card::before {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      width: 44px;
+      height: 3px;
+      background: var(--accent);
+      box-shadow: 52px 0 0 var(--secondary);
+      content: "";
+    }
+
     .project-icon {
       display: grid;
       width: 47px;
@@ -301,14 +326,14 @@
       place-items: center;
       color: var(--accent);
       background: var(--accent-soft);
-      border-radius: 14px;
+      border-radius: 6px;
       font-size: 22px;
     }
 
     .project-card h3 {
       margin: 34px 0 7px;
       font-size: 19px;
-      letter-spacing: -0.035em;
+      letter-spacing: 0.02em;
     }
 
     .project-card p {
@@ -364,7 +389,7 @@
   <main class="page">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#" aria-label="Satya Bhatt home">
-        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-mark" aria-hidden="true">▣</span>
         <span>Satya Bhatt</span>
       </a>
       <div class="nav-actions">
@@ -377,22 +402,22 @@
 
     <header class="hero">
       <div>
-        <p class="eyebrow">Elementary Student · Based in USA</p>
+        <p class="eyebrow">PLAYER 01 · ELEMENTARY STUDENT · USA</p>
         <h1>Building calm, capable games for <span>curious people.</span></h1>
         <p class="hero-copy">I’m Satya, a developer who turns complex ideas into thoughtful digital games — with a little craft in every interaction.</p>
       </div>
-      <div class="avatar" aria-label="Waving hand emoji avatar"><span aria-hidden="true">👋🏾</span></div>
+      <div class="avatar" aria-label="Gaming controller emoji avatar"><span aria-hidden="true">🎮</span></div>
     </header>
 
     <section id="projects" aria-labelledby="projects-heading">
       <div class="section-heading">
-        <h2 id="projects-heading">A few things I’ve shipped</h2>
-        <p class="section-note">September 2026</p>
+        <h2 id="projects-heading">Featured game</h2>
+        <p class="section-note">Playable in browser · September 2026</p>
       </div>
 
       <div class="projects-grid">
         <a class="project-card" href="https://satyab11.itch.io/boot-league" aria-label="View Boot-League project">
-          <span class="project-icon" aria-hidden="true">✦</span>
+          <span class="project-icon" aria-hidden="true">⚽</span>
           <div>
             <h3>Boot-League</h3>
             <p>I made a really cool football game called Boot League all by myself! I used stuff I learned from YouTube and some awesome things like Claude Code and ChatGPT. It's in 3D and everything! I worked super hard on it and I think it's pretty amazing. You can play it right in your web browser without installing anything. Check it out and let me know what you think...</p>
